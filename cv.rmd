@@ -87,7 +87,7 @@ Disclaimer {#disclaimer}
 
 Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
 
-The source code is available [on github.com/nstrayer/cv](https://github.com/danielkick/cv).
+The source code is available [on github.com/danielkick/cv](https://github.com/danielkick/cv).
 
 Last updated on `r Sys.Date()`.
 
@@ -106,21 +106,19 @@ CV %<>% print_text_block("intro")
 
 
 
-Education {data-icon=graduation-cap data-concise=true}
+Publications {data-icon=book}
 --------------------------------------------------------------------------------
 
 ```{r}
-CV %<>% print_section('education')
+CV %<>% print_section('academic_articles')
 ```
 
 
 
-Research Experience {data-icon=laptop}
---------------------------------------------------------------------------------
-
 ```{r}
-CV %<>% print_section('research_positions')
+CV %<>% print_links()
 ```
+
 
 
 
@@ -142,6 +140,27 @@ CV %<>% print_section('industry_positions')
 <br>
 <br>
 
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('education')
+```
+
+
+
+Research Experience {data-icon=laptop}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('research_positions')
+```
+
+
+
+
+
 Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
@@ -157,52 +176,97 @@ CV %<>% print_section('teaching_positions')
 
 
 
-Selected Data Science Writing {data-icon=chart-line}
---------------------------------------------------------------------------------
-
-::: aside
-```{r}
-CV %<>% print_text_block('data_science_writing_aside')
-```
-:::
-
-```{r}
-CV %<>% print_section('data_science_writings')
-```
-
-
-
-Selected Press (About)  {data-icon=newspaper}
+Honors and Awards  {data-icon=newspaper}
 --------------------------------------------------------------------------------
 
 ```{r}
-CV %<>% print_section('about_me_press')
+CV %<>% print_section('honors_awards')
 ```
 
 
-<br>
-<br>
-
-
-Selected Press (By)  {data-icon=newspaper}
+Professional Activities  {data-icon=newspaper}
 --------------------------------------------------------------------------------
 
 ```{r}
-CV %<>% print_section('by_me_press')
+CV %<>% print_section('professional_activities')
 ```
 
 
-
-Selected Publications, Posters, and Talks {data-icon=book}
+Professional Development  {data-icon=newspaper}
 --------------------------------------------------------------------------------
 
 ```{r}
-CV %<>% print_section('academic_articles')
+CV %<>% print_section('professional_development')
 ```
 
 
+Mentoring  {data-icon=newspaper}
+--------------------------------------------------------------------------------
 
 ```{r}
-CV %<>% print_links()
+CV %<>% print_section('mentoring')
 ```
+
+
+Presentations (National)  {data-icon=newspaper}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('national_presentations')
+```
+
+
+Presentations (Local)  {data-icon=newspaper}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('local_presentations')
+```
+
+
+Presentations (Outreach)  {data-icon=newspaper}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('outreach_presentations')
+```
+
+
+
+
+<!-- Selected Data Science Writing {data-icon=chart-line} -->
+<!-- -------------------------------------------------------------------------------- -->
+
+<!-- ::: aside -->
+<!-- ```{r} -->
+<!-- CV %<>% print_text_block('data_science_writing_aside') -->
+<!-- ``` -->
+<!-- ::: -->
+
+<!-- ```{r} -->
+<!-- CV %<>% print_section('data_science_writings') -->
+<!-- ``` -->
+
+
+
+<!-- Selected Press (About)  {data-icon=newspaper} -->
+<!-- -------------------------------------------------------------------------------- -->
+
+<!-- ```{r} -->
+<!-- CV %<>% print_section('about_me_press') -->
+<!-- ``` -->
+
+
+<!-- <br> -->
+<!-- <br> -->
+
+
+<!-- Selected Press (By)  {data-icon=newspaper} -->
+<!-- -------------------------------------------------------------------------------- -->
+
+<!-- ```{r} -->
+<!-- CV %<>% print_section('by_me_press') -->
+<!-- ``` -->
+
+
 
