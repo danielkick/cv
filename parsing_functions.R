@@ -1,4 +1,4 @@
-# From Abhinav Malasi's adapataion available at'
+# Drawing from Abhinav Malasi's adaptation available at
 # https://github.com/amalasi2418/Blog-post/tree/master/resume/Automate
 
 
