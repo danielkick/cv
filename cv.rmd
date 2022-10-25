@@ -125,11 +125,7 @@ CV %<>% print_links()
 Industry Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
-::: aside
-```{r}
-CV %<>% print_text_block('industy_experience_aside')
-```
-:::
+
 
 ```{r}
 CV %<>% print_section('industry_positions')
@@ -164,11 +160,6 @@ CV %<>% print_section('research_positions')
 Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
-::: aside
-```{r}
-CV %<>% print_text_block('teaching_experience_aside')
-```
-:::
 
 ```{r}
 CV %<>% print_section('teaching_positions')
