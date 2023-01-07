@@ -16,6 +16,17 @@ knit: pagedown::chrome_print
 
 
 
+```{r eval=FALSE, include=FALSE}
+icons::download_bioicons()
+icons::download_academicons()
+icons::download_feather_icons()
+icons::download_fontawesome()
+icons::download_google_material()
+icons::download_ionicons()
+icons::download_octicons()
+icons::download_simple_icons()
+
+```
 
 
 
