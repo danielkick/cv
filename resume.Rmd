@@ -14,37 +14,31 @@ output:
 knit: pagedown::chrome_print
 ---
 
-
-
 ```{r eval=FALSE, include=FALSE}
-icons::download_bioicons()
-icons::download_academicons()
-icons::download_feather_icons()
-icons::download_fontawesome()
-icons::download_google_material()
-icons::download_ionicons()
-icons::download_octicons()
-icons::download_simple_icons()
-
+icons::icon_find('users', set = "fontawesome")
+icons::icon_find('leader')
 ```
+<!-- Formatting Ref: -->
 
+<!-- These breaks just force a new page so section doesn't get cut off -->
+<!-- <br> -->
+<!-- <br> -->
+<!-- <br> -->
+<!-- <span style="color: red;">text</span> -->
+<!-- <font size="+2">This is bigger text.</font> -->
+<!-- <font size="-1">This is smaller text.</font> -->
+<!-- <font size="1">This is really tiny text.</font> -->
 
-
-<!-- title: "Daniel R. Kick's CV" -->
-<!-- author: Daniel R. Kick -->
-<!-- date: "`r Sys.Date()`" -->
-<!-- params: -->
-<!--   pdf_mode: -->
-<!--     value: true -->
-<!-- output: -->
-<!--   pagedown::html_resume: -->
-<!--     css: ['dd_cv.css', 'resume'] -->
-<!--     self_contained: true -->
-
-    
-    
-    
-    
+<!-- this controls the icon positioning -->
+<!-- --decorator-horizontal-margin: .2in;  -->
+```{css, echo=FALSE}
+.pagedjs_page:not(:first-of-type) {
+  --sidebar-width: 0rem;
+  --sidebar-background-color: #ffffff;
+  --main-width: calc(var(--content-width) - var(--sidebar-width));
+  --decorator-horizontal-margin: 0.22in; 
+}
+```
 
 ```{r, include=FALSE}
 knitr::opts_chunk$set(
@@ -65,9 +59,9 @@ source("cv_printing_functions.r")
 library(tidyverse)
 # Read in all data and initialize a CV printer object
 position_data <- read_csv("csvs/positions.csv")
-skills        <- read_csv("csvs/language_skills.csv")
-text_blocks   <- read_csv("csvs/text_blocks.csv")
-contact_info  <- read_csv("csvs/contact_info.csv", skip = 1)
+# skills        <- read_csv("csvs/language_skills.csv")
+# text_blocks   <- read_csv("csvs/text_blocks.csv")
+# contact_info  <- read_csv("csvs/contact_info.csv", skip = 1)
 
 
 
@@ -111,79 +105,67 @@ position_data <- position_data %>%
 
 
 ```
- 
-
-```{r}
-# When in pdf export mode the little dots are unaligned, so fix that with some conditional CSS.
-# if(params$pdf_mode) {
-#     cat("
-# <style>
-# :root{
-#   --decorator-outer-offset-left: -6.5px;
-# }
-# </style>")
-# }
-```
-
 
 Aside
 ================================================================================
-
-Contact Info {#contact}
---------------------------------------------------------------------------------
-```{r}
-knitr::include_graphics("Headshot.jpg")
-```
-
-```{r}
-# ai_icons = c("orcid")
-# 
-# contact_info %>% filter(!(loc %in% ai_icons)) %>%
-#   glue_data("- <i class='fa fa-{icon}'></i> {contact}")
-# 
-# contact_info %>% filter(loc %in% ai_icons) %>%
-#   glue_data("- <i class='ai ai-{icon}'></i> {contact}")
-```
+## Contact Info. 
 - `r icons::fontawesome$solid$envelope` [hello@danielkick.com](hello@danielkick.com)
 - `r icons::fontawesome$solid$link` [danielkick.com](https://www.danielkick.com)
 - `r icons::fontawesome$brands$github` [github.com/danielkick](https://github.com/danielkick)
-- `r icons::fontawesome$brands$linkedin` [daniel-kick-5a449b9a/](https://www.linkedin.com/in/daniel-kick-5a449b9a/)
+- `r icons::fontawesome$brands$linkedin` [daniel-kick-5a449b9a](https://www.linkedin.com/in/daniel-kick-5a449b9a/)
 - `r icons::academicons$"google-scholar"` [Google Scholar](https://scholar.google.com/citations?user=5Sz0E-0AAAAJ&hl=en&oi=ao)
-- `r icons::fontawesome$brands$orcid` [0000-0002-9002-1862](https://orcid.org/0000-0002-9002-1862)
-- Please email me with any questions, comments, or suggestions.
-
-
-```{r eval=FALSE, include=FALSE}
-icons::icon_find('users', set = "fontawesome")
-icons::icon_find('beaker')
-```
 
 
 
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+### PhD: Biological Sciences
+
+University of Missouri, Columbia, MO (2021)
+
+*Machine Learning Methods for Biomedical Informatics, Quantitative Methods in the Life Sciences*, and *Grant Writing*
+<br>
+
+### Bachelor of Science: Biology
+
+Truman State University, Kirksville, MO (2015)
+
+*Next Generation Sequence Data and Analysis, Bioinformatics, Analysis of Variance and Experimental Design, Non-Parametric Statistics*, and *Economic & Medicinal Botany*
+
+*Leadership role* in the biological honors society *Tri-Beta*
+
+
+## Technical Skills
+
+ `r icons::fontawesome$brands$"r-project"`: **R **Programming  (`r round(as.numeric(difftime(as.Date(format(Sys.time(), "%Y-%m-%d")), as.Date("2017-01-29"), units = "weeks"))/52, 0)` years) experience with <span style="color: DarkRed;">`tidyverse`, `lme4`, `caret`, `ggplot2`, `shiny`</span>, & package creation. 
+ 
+ 
+ `r icons::fontawesome$brands$python`: **Python **Programming 
+ 
+ (`r round(as.numeric(difftime(as.Date(format(Sys.time(), "%Y-%m-%d")), as.Date("2021-06-09"), units = "weeks"))/52, 0)` years) experience with <span style="color:DarkRed;">`pandas`, `numpy`, `plotly`, `scikit-learn`, `keras`, `pytorch`</span>.
+ 
+
+ `r icons::octicons$terminal`: **Miscellaneous **
+ 
+ Experience with high performance computing (<span style="color:DarkRed;">`bash`, `slurm`</span>), virtual environments (<span style="color:DarkRed;">`conda`, `singularity`, `docker`</span>), version control (<span style="color:DarkRed;">`git`, `GitHub`</span>), literate programming (<span style="color:DarkRed;">`Rmarkdown`, `Jupyter`</span>).
+
+
+<!-- `r icons::octicons$person`: **Soft Skills** Adaptability | Problem Solving | Self-Directed Learning | Leadership | Mentorship  -->
 
 
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
-Use this QR code to 
+For a pdf with
 
-access a pdf with links.
+links scan here.
 
-```{r}
-knitr::include_graphics("./qr_online_cv.gif")
+```{r, out.width="25%"}
+knitr::include_graphics("./qr_gh_Resume_Resume.gif")
 ```
+<!-- This resume was made with the R package [**pagedown**](https://github.com/rstudio/pagedown). -->
+<!-- Last updated on `r Sys.Date()`. -->
 
-
-This resume was made with the R package [**pagedown**](https://github.com/rstudio/pagedown).
-
-Last updated on `r Sys.Date()`.
-
-```{r}
-# if(params$pdf_mode){
-#   cat("View this CV online with links at _https://danielkick.com/cv.pdf_")
-# } else {
-#   cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/danielkick/cv/raw/master/cv.pdf)")
-# }
-```
 
 Main
 ================================================================================
@@ -191,93 +173,259 @@ Main
 Daniel R. Kick, PhD {#title}
 --------------------------------------------------------------------------------
 
+- Quantitative biologist with `r round(as.numeric(difftime(as.Date(format(Sys.time(), "%Y-%m-%d")), as.Date("2015-09-01"), units = "weeks"))/52, 0)` years of experience in academic and government laboratories.
+- Experience with **statistical modeling, machine learning, deep learning**, and data visualization.
+<!-- - Authored peer reviewed scientific publications and presented results to stakeholders in academic and non-academic settings. -->
+- Experience with leadership, management, mentorship, and teaching.
+- Developed and deployed an educational statistical tool used by >700 students as of 2021.
+<!-- - Currently a **Research Geneticist** at the USDA-ARS (Agricultural Research Service) I am working to improve corn yield prediction by modeling genetic, environmental, management, and interaction effects using **deep learning**, **machine learning**, and **statistical modeling**. -->
+<!-- - As a PhD student, I applied **machine learning** to identify neuronal cell types from transcriptomic and ion channel mRNA data and used **statistical modeling** in conjunction with electrophysiological experiments to study activity dependent compensation in neurons and neural circuits. -->
 
-### About Me:
+
 
 ```{r}
-print_text_block(text_blocks, 'intro')
+# paste(c("a", "b"), collapse = " | ")
 ```
 
-
-I have experience with statistical modeling, machine learning, deep learning, experimental design, and data visualization & communication. 
-
- - `r icons::fontawesome$brands$"r-project"`:  `r round(as.numeric(difftime(as.Date(format(Sys.time(), "%Y-%m-%d")), as.Date("2017-01-29"), units = "weeks"))/52, 2)` years of R Programming experience using `tidyverse`, `lme4`, `caret`, `ggplot2`, & `shiny`. 
- - `r icons::fontawesome$brands$python`: `r round(as.numeric(difftime(as.Date(format(Sys.time(), "%Y-%m-%d")), as.Date("2021-07-29"), units = "weeks"))/52, 2)` years of Python programming experience using `pandas`, `plotly`, `keras`.
- - `r icons::octicons$terminal`: Experience with `bash`, computing clusters, virtual environments (`conda`, `singularity`, `docker`), version control (`git`), literate programming (`Rmarkdown`, `Jupyter`).
+<!-- Problem-solving |  Detail & Results-oriented | Statistical Analysis | Data Visualization | -->
+<!-- Literate Programming | Technical & Non-technical Writer | Research & Development | Public Speaking | -->
+<!-- Regulatory Affairs | Experimental Design | Method Development | Training, Mentorship, & Recruitment | -->
+<!-- Collaborative | Open-mindedness | Growth mindset | Resourceful | Dependability | Adaptability | Self-starter | -->
+<!-- Leadership | Effective Communicator | Fluorescent Microscopy | Microbiology | Pharmacology | Life Sciences -->
 
 
 <!-- Education {data-icon=graduation-cap data-concise=true} -->
-Education {data-icon=graduation-cap}
---------------------------------------------------------------------------------
-
-```{r}
-position_data %>% print_section('education')
-```
-
-Professional Experience {data-icon=laptop}
---------------------------------------------------------------------------------
-
-```{r}
-position_data %>% print_section('industry')
-``` 
- 
-Research Experience {data-icon=flask}
---------------------------------------------------------------------------------
-```{r}
-position_data %>% print_section('research')
-```
-
-Honors and Awards  {data-icon=award}
---------------------------------------------------------------------------------
-```{r}
-position_data %>% print_section('honors')
-```
-
-
-Professional Activities {data-icon=suitcase}
---------------------------------------------------------------------------------
-```{r}
-position_data %>% print_section('professional_activities')
-```
-
-
-<!-- Professional Development {data-icon=chart-line} S-->
 <!-- -------------------------------------------------------------------------------- -->
-<!-- ```{r} -->
-<!-- position_data %>% print_section('professional_development') -->
-<!-- ``` -->
+
+<!-- ### PhD: Biological Sciences -->
+
+<!-- University of Missouri, Columbia, MO -->
+
+<!-- Coursework included *Machine Learning Methods for Biomedical Informatics, Quantitative Methods in the Life Sciences*, and *Grant Writing* -->
+
+<!-- 2021 - 2015 -->
+
+<!-- Coursework included *Machine Learning Methods for Biomedical Informatics, Quantitative Methods in the Life Sciences*, and *Grant Writing* -->
 
 
-Teaching Experience {data-icon=chalkboard-teacher}
+<!-- ### Bachelor of Science: Biology -->
+
+<!-- Truman State University, Kirksville, MO -->
+
+<!-- N/A -->
+
+<!-- 2015 - 2011 -->
+
+<!-- Coursework included *Next Generation Sequence Data and Analysis, Bioinformatics, Analysis of Variance and Experimental Design, Non-Parametric Statistics*, and *Economic & Medicinal Botany* -->
+<!-- Held *leadership role* in the biological honors society *Tri-Beta* -->
+
+
+
+Professional and Research Experience {data-icon=laptop}
+--------------------------------------------------------------------------------
+### Research Geneticist
+
+Jacob Washburn Lab, USDA-ARS
+
+N/A
+
+Present - 2021
+
+- Evaluated **deep neural networks, machine learning models,** and **best linear unbiased predictors** to **improve yield prediction accuracy** in diverse environments. 
+- **Communicated with stakeholders through 7 presentations** <font size="1">(3 national, 2 regional, and 2 outreach presentations)</font>. 
+- Mentored 2 students conducting a high throughput root phenotyping experiment and wrote scripts for data organization and analysis. <font size="1">Grace Sidberry (2021-pres.),  Madi Michell (2022-pres.)</font>
+- **Created and taught a Python data visualization workshop** at University of Missouri Bioinformatics in Plant Science group titled **Tools and Techniques for a `Jupyter` Based Scientific Workflow**
+- Completed **Software Carpentries instructor certification**, taught **`R` for Reproducible Scientific Analysis**, and assisted in teaching **Data Management with `SQL`**.
+- Designed and completed a professional development curriculum with the guidance of an industry scientist via the **Bayer-University Mentoring Program**.
+- Served as a panel member on "Next-Generation Omics" at the 2022 University of Missouri Division of Biological Sciences Retreat
+
+
+### Graduate Researcher
+
+David Schulz Lab, University of Missouri
+
+N/A
+
+2021 - 2016
+
+- **Author on 6 publications**<font size="1">: 4 original research and 2 eLife Insight publications.</font>
+- Communicated results with stakeholders through **17 presentations** <font size="1">(6 national, 6 regional, and 5 outreach and recruitment)</font>. 
+- **Collaborated with electrophysiologists** studying spinal cord injury. Assisted with data organization, cleaning, and analysis (manuscript in preparation).
+- **Collaborated with computational neurosciencists**, contributing biological and statistical expertise (in preparation).
+- **Mentored 5 students** and oversaw their projects. <font size="1">Abby Beckerdite (2016-2019), Ayla Ross (2019), Katlyn Sullivan (2018), Kelly Hiersche (2017), & Rody Kingston (2016)</font>
+- Served as a peer mentor for 3 PhD students in use of `R` for reproducible data analysis, created internal guides to share knowledge on same.
+- <span style="color: #003399;">**Assessed the efficacy of machine learning models** to recapitulate neural cell identity from mRNA and contig abundances.</span> **Applied cluster estimation, hyperparameter tuning, unsuprevised machine learning,** and **supervised machine learning** techniques. Identified theoretical and practical resources, then learned needed knowledge and skills primarily through self study. Collaborated with molecular biology project lead (Adam Northcutt).
+- <span style="color: #003399;">Demonstrated that activity desynchronization induces degree dependent changes in conductance between neurons.</span> Defined research question and approach, designed and implemented experiments using current clamp, voltage clamp, dynamic clamp, and pharmaceutical application. **Developed novel approach to quantify changes in cell activity**. Applied **resampling techniques, mixed effects models, and akaike information criteria,** and **asympotic regression**. 
+- <span style="color: #003399;">Investigated activity dependent changes from elevated depolarization in neuronal excitability, conductances, and ion channel mRNA abundances in small neural networks.</span> Designed and executed experiments, collected data, performed analysis, **developed novel method for quantifying changes in cell activity** using *in silico* simulations.
+
+<!-- (https://www.pnas.org/doi/10.1073/pnas.1911413116) -->
+<!-- [2](https://www.jneurosci.org/content/42/35/6751) -->
+<!-- [3](https://mospace.umsystem.edu/xmlui/handle/10355/85790) -->
+
+### Lead Teaching Assistant, Animal Physiology Lab
+
+Biological Sciences, University of Missouri
+
+N/A
+
+2021 - 2020
+
+- **Developed statistics web application used by more than 700 students** as of 2021 with `shiny` ([source](https://github.com/danielkick/MultiMethodPhysApp),[deployed](https://danielkick.shinyapps.io/BioSc3700_1)) for data visualization, testing assumptions, and fitting **frequentist**, **non-parametric**, and **Bayesian** models.
+- Lead 3-4 Teaching Assistants and coordinated adaptation of lab curriculum to be fully online due to Covid-19.
+- *Mentored* successor, created documentation on best practices.
+
+### Teaching Assistant, Animal Physiology Lab
+
+Biological Sciences, University of Missouri
+
+N/A
+
+2020 - 2018
+
+- Analyzed student grade distributions to adjust for grader effects at request of the instructor of record.
+- Continued duties below.
+
+
+### Curriculum Consultant, Animal Physiology Lab
+
+Biological Sciences, University of Missouri
+
+N/A
+
+2018
+
+- Redesigned course material to incorporate primary literature and data analysis.
+
+
+### Teaching Assistant, Animal Physiology Lab
+
+Biological Sciences, University of Missouri
+
+N/A
+
+2016 - 2015
+
+- Provided weekly lectures, ensured experiments were conducted safely, provided timely feedback on assignments.
+
+
+### Undergradute Researcher
+
+University of Missouri, University of Connecticut, and Truman State University
+
+N/A
+
+2013 - 2015
+
+- Designed a hydroponic system for maize root phenotyping <font size="1">-- Diane Janick-Buckner and Brent Buckner, Truman State University (2014-2015)</font>, Quantified retinal minor splicisome expression using immunohistochemistry <font size="1">-- (NSF REU) Rahul Kanadia, University of Connecticut (2014)</font>, Measured effectiveness of oligonucleotide treatment for spinal muscular atrophy in mice <font size="1">-- (NSF REU) Christian Lorson, University of Missouri (2013)</font>
+
+
+
+Honors and Awards (2/5) {data-icon=award}
+--------------------------------------------------------------------------------
+### J. Perry Gustafson Award for Outstanding Graduate Research in the Life Sciences
+
+[This award](https://randall-travel-award.missouri.edu/gustafson-award/) is granted for the quality of a student's independent research and academic achievements. Recipients receive a \$2,000 award.
+
+N/A
+
+2019
+
+
+### National Institutes of Health T32 Training Grant Recipient
+
+This fellowship provides a \$27,000 yearly stipend and travel awards of \$750.  
+
+N/A
+
+2018 - 2016
+
+
+
+
+
+
+Selected Publications (3/7, 5 `r print('reviewed')`Reviewed) {data-icon=flask}
 --------------------------------------------------------------------------------
 ```{r}
-position_data %>% print_section('teaching_positions')
+# position_data %>% print_section('academic_articles')
 ```
+### Yield Prediction Through Integration of Genetic, Environment, and Management Data Through Deep Learning
+
+<font size="1">***Daniel R. Kick***, Jason G. Wallace, James C. Schnable, Judith M. Kolkman, Baris Alaca, Timothy M. Beissinger, David Ertl, Sherry Flint-Garcia, Joseph L. Gage, Candice N. Hirsch, Joseph E. Knoll, Natalia de Leon, Dayane C. Lima, Danilo Moreta, Maninder P. Singh, Teclemariam Weldekidan, Jacob D. Washburn [G3: Genes, Genomes, Genetics](https://academic.oup.com/g3journal/advance-article/doi/10.1093/g3journal/jkad006/6982634)</font>
+
+N/A
+
+2023
 
 
-Selected Publications {data-icon=file}
---------------------------------------------------------------------------------
-```{r}
-position_data %>% print_section('academic_articles')
-```
+### Timing dependent potentiation and depression of electrical synapses contributes to network stability in the crustacean cardiac ganglion
+
+<font size="1">***Daniel R. Kick*** and David J. Schulz [The Journal of Neuroscience](https://www.jneurosci.org/content/42/35/6751)</font>
+
+N/A
+
+2022
+<!-- [Code](https://github.com/danielkick/ElectricalSynapsePotentiation) -->
 
 
-Selected Presentations {data-icon=users}
---------------------------------------------------------------------------------
-```{r}
-position_data %>% print_section('national_presentations')
+### Molecular profiling of single neurons of known identity in two ganglia from the crab Cancer borealis
+
+<font size="1">Adam J. Northcutt^1^, ***Daniel R. Kick^1^***, Adriane G. Otopalik, Benjamin M. Goetz, Rayna M. Harris, Joseph M. Santin, Hans A. Hofmann, Eve Marder, and David J. Schulz (*^1^ denotes co-first authorship*) [Proceedings of the National Academy of Sciences](https://www.pnas.org/doi/10.1073/pnas.1911413116)</font>
+
+N/A
+
+2019
 
 
-# position_data %>% print_section('local_presentations')
+<!-- [Code](https://github.com/danielkick/STGmRNACellClassification) -->
 
 
-position_data %>% print_section('outreach_presentations')
-```
+<!-- ### Cell Communication: Studying gap junctions with PARIS -->
+
+<!-- [eLife](https://elifesciences.org/articles/45207) -->
+
+<!-- N/A -->
+
+<!-- 2019 -->
+
+<!-- - Daniel R Kick, David J Schulz -->
 
 
-<!-- These breaks just force a new page so section doesnt get cut off --> 
-<!-- <br> -->
-<!-- <br> -->
-<!-- <br> -->
+
+<!-- ### Dopamine maintains network synchrony via direct modulation of gap junctions in the crustacean cardiac ganglion -->
+
+<!-- [eLife](https://elifesciences.org/articles/39368) -->
+
+<!-- N/A -->
+
+<!-- 2018 -->
+
+<!-- - Brian J Lane, Daniel R Kick, David K Wilson, Satish S Nair, David J Schulz -->
 
 
+
+<!-- ### Motor Systems: Variability in neural networks -->
+
+<!-- [eLife](https://elifesciences.org/articles/34153) -->
+
+<!-- N/A -->
+
+<!-- 2018 -->
+
+<!-- - Daniel R Kick, David J Schulz -->
+
+
+
+<!-- ### The Hillary Climber trumps manual testing: an automatic system for studying Drosophila climbing -->
+
+<!-- [The Journal of Neurogenetics](https://www.tandfonline.com/doi/abs/10.1080/01677063.2016.1255211) -->
+
+<!-- N/A -->
+
+<!-- 2016 -->
+
+<!-- - Alex M. Willenbrink, Margo K. Gronauer, Leon F. Toebben, Daniel R. Kick, Madalyn Wells & Bing Zhang -->
+<!-- - Journal of Neurogenetics -->
+
+<!-- Additional Projects {data-icon=laptop} -->
+<!-- -------------------------------------------------------------------------------- -->
