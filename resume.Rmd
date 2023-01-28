@@ -232,7 +232,7 @@ N/A
 Present - 2021
 
 - Evaluated **deep neural networks, machine learning models,** and **best linear unbiased predictors** to **improve yield prediction accuracy** in diverse environments. 
-- **Communicated with stakeholders through 7 presentations** <font size="1">(3 national, 2 regional, and 2 outreach presentations)</font>. 
+- **Communicated with stakeholders through 8 presentations** <font size="1">(4 national, 2 regional, and 2 outreach presentations)</font>. 
 - Mentored 2 students conducting a high throughput root phenotyping experiment and wrote scripts for data organization and analysis. <font size="1">Grace Sidberry (2021-pres.),  Madi Michell (2022-pres.)</font>
 - **Created and taught a Python data visualization workshop** at University of Missouri Bioinformatics in Plant Science group titled **Tools and Techniques for a `Jupyter` Based Scientific Workflow**
 - Completed **Software Carpentries instructor certification**, taught **`R` for Reproducible Scientific Analysis**, and assisted in teaching **Data Management with `SQL`**.
@@ -344,7 +344,7 @@ N/A
 
 
 
-Selected Publications (3/7, 5 `r print('reviewed')`Reviewed) {data-icon=flask}
+Selected Publications (3/8) {data-icon=flask}
 --------------------------------------------------------------------------------
 ```{r}
 # position_data %>% print_section('academic_articles')

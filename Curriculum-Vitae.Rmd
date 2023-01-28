@@ -21,6 +21,15 @@ knit: pagedown::chrome_print
 
 # Useful Refs
 # https://annekelincoln.com/resume-in-r/
+  # devtools::install_github("danielkick/datadrivencv")
+  # remotes::install_github("mitchelloharawild/icons")
+
+# icons::download_academicons()
+# icons::download_bioicons()
+# icons::download_fontawesome()
+
+
+
 # https://shaziaruybal.github.io/automate-cv-rmd/
 # https://github.com/amalasi2418/Blog-post/tree/master/resume/Automate
 ```
@@ -190,6 +199,13 @@ position_data %>% print_section('professional_development')
 
 
 Publications {data-icon=flask}
+--------------------------------------------------------------------------------
+```{r}
+position_data %>% print_section('academic_articles')
+```
+
+
+Publications in Preparation {data-icon=flask}
 --------------------------------------------------------------------------------
 ```{r}
 position_data %>% print_section('academic_articles')
