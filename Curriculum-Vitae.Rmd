@@ -26,9 +26,12 @@ knit: pagedown::chrome_print
 
 # icons::download_academicons()
 # icons::download_bioicons()
+# icons::download_feather_icons()
 # icons::download_fontawesome()
-
-
+# icons::download_google_material()
+# icons::download_ionicons()
+# icons::download_octicons()
+# icons::download_simple_icons()
 
 # https://shaziaruybal.github.io/automate-cv-rmd/
 # https://github.com/amalasi2418/Blog-post/tree/master/resume/Automate
@@ -191,12 +194,17 @@ Professional Activities {data-icon=suitcase}
 position_data %>% print_section('professional_activities')
 ```
 
+Mentoring {data-icon=users}
+--------------------------------------------------------------------------------
+```{r}
+position_data %>% print_section('mentoring')
+```
+
 Professional Development {data-icon=suitcase}
 --------------------------------------------------------------------------------
 ```{r}
 position_data %>% print_section('professional_development')
 ```
-
 
 Publications {data-icon=flask}
 --------------------------------------------------------------------------------
@@ -204,18 +212,16 @@ Publications {data-icon=flask}
 position_data %>% print_section('academic_articles')
 ```
 
-
 Publications in Preparation {data-icon=flask}
 --------------------------------------------------------------------------------
 ```{r}
-position_data %>% print_section('academic_articles')
+position_data %>% print_section('academic_articles_prep')
 ```
 
-
-National Presentations {data-icon=users}
+Mentoring {data-icon=users}
 --------------------------------------------------------------------------------
 ```{r}
-position_data %>% print_section('national_presentations')
+position_data %>% print_section('mentoring')
 ```
 
 Local Presentations {data-icon=users}
