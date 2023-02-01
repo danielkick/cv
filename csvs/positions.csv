@@ -12,7 +12,7 @@ professional,FALSE,NSF REU Student,"Christian Lorson Lab, Missouri State Univers
 professional,FALSE,Camp Counselor & Lifeguard,,,2012,"Responsible for safety, development, and wellbeing of campers.",,,,
 professional,FALSE,Student Assistant,"Laszlo Kovacs Laboratory, Missouri State University",,2011,Tested teaching experiments for use in a genetics course.,,,,
 ,,,,,,,,,,
-teaching_positions,TRUE,"Lead Teaching Assistant, Animal Physiology Lab","Biological Sciences, University of Missouri",2020,2021,"Coordinated adaptation and expansion of lab material to be fully online due to Covid-19. Developed and deployed a statistics web application used by a minimum 705 students as of 2021 [source](https://github.com/danielkick/MultiMethodPhysApp) , [deployed](https://danielkick.shinyapps.io/BioSc3700_1). Includes capability for visualization, testing model assumptions, frequentist models, non-parametric tests, basic Bayesian models.",,,,
+teaching_positions,TRUE,"Lead Teaching Assistant, Animal Physiology Lab","Biological Sciences, University of Missouri",2020,2021,"Coordinated adaptation and expansion of lab material to be fully online due to Covid-19. Developed and deployed a statistics web application used by a minimum 705 students as of 2021 [source](https://github.com/danielkick/MultiMethodPhysApp) , [deployed](https://danielkick.shinyapps.io/BioSc3700_1). Includes capability for visualization, testing model assumptions, frequentist models, non-parametric tests, basic Bayesian models. Lead Benton Berigan, Jose Viteri, Josh Lisse, Dr. Michael Gray.",,,,
 teaching_positions,TRUE,"Teaching Assistant, Animal Physiology Lab","Biological Sciences, University of Missouri",2018,2020,"Tested additional curriculum alterations, tested grade distrubutions to identify and adjust for grader effects.",,,,
 teaching_positions,TRUE,"Curriculum Consultant, Animal Physiology Lab","Biological Sciences, University of Missouri",2018,2018,Updated curriculum and redesigned experiments placing a greater focus primary literature and data analysis.,,,,
 teaching_positions,TRUE,"Teaching Assistant, Animal Physiology Lab","Biological Sciences, University of Missouri",2015,2016,"Provided weekly lectures on relevant background, ensured experiments were conducted safely, provided timely feedback on assignments.",,,,
@@ -48,12 +48,12 @@ academic_articles,FALSE,Motor Systems: Variability in neural networks,"Daniel R 
 academic_articles,FALSE,The Hillary Climber trumps manual testing: an automatic system for studying Drosophila climbing,"Alex M. Willenbrink, Margo K. Gronauer, Leon F. Toebben, Daniel R. Kick, Madalyn Wells & Bing Zhang",,2016,,,,,[The Journal of Neurogenetics](https://www.tandfonline.com/doi/abs/10.1080/01677063.2016.1255211)
 ,,,,,,,,,,
 academic_articles_prep,FALSE,The Mustard Mayhem: Phylogenetically localizing and dating the mesohexaploidy of the tribe Brassiceae,"Shawn K. Thomas, R. Shawn Abrahams, Nora Walden, Tatiana Arias, Daniel Robert Kick, Alex McAlvay, Alex Harkess, Michael R. McKain, Ihsan A. Al-Shehbaz, Frederic Lens, Kasper Hendriks, Marcus A. Koch, J. Chris Pires, Jacob Washburn",,2023,,,,,(In Prep)
-academic_articles_prep,FALSE,Crustacean cardiac ganglion model reveals constraints on morphology and conductances,"Dan Dopp, Pranit Samarth, Jing Wang, Daniel Kick, View ORCID ProfileDavid J. Schulz, View ORCID ProfileSatish S. Nair",,2023,,,,,"(In Prep, BioR$\chi$iv)[https://www.biorxiv.org/content/10.1101/2021.10.21.464612v1]"
+academic_articles_prep,FALSE,Crustacean cardiac ganglion model reveals constraints on morphology and conductances,"Dan Dopp, Pranit Samarth, Jing Wang, Daniel Kick, David J. Schulz, Satish S. Nair",,2023,,,,,"[In Prep, BioR$\chi$iv](https://www.biorxiv.org/content/10.1101/2021.10.21.464612v1)"
 academic_articles_prep,FALSE,Effects of Spinal Cord Injury on Major Pelvic Ganglion Activity (Placeholder Title),"Michael L. Gray**1, Daniel R. Kick**1, Benton Berigan, Sherryl Henderson, David J. Schulz",,2023,,,,,(In Prep)
 ,,,,,,,,,,
 national_presentations,TRUE,"Maize Yield Prediction Accuracy Increased By Inclusion of Genetics, Environment, and Management Interactions With Deep Learning","Plant and Animal Genetics (PAG), San Diego CA",,2023,"*Daniel R Kick*, Jacob D. Washburn (2023)",Poster,,,
-national_presentations,TRUE,"Improving Maize Yield Prediction through Genetic, Environmental, and Management Factor Interactions with Deep Learning","_ASA, CSSA and SSSA International Annual Meetings, Baltimore MD",,2022,"*Daniel R Kick*, Jacob D. Washburn (2022)",Poster,,,
-national_presentations,TRUE,"Improving Maize Yield Prediction through Genetic, Environmental, and Management Factor Interactions with Deep Learning","_ASA, CSSA and SSSA International Annual Meetings, Baltimore MD",,2022,"*Daniel R Kick*, Jacob D. Washburn (2022)",Presentation,,,
+national_presentations,TRUE,"Improving Maize Yield Prediction through Genetic, Environmental, and Management Factor Interactions with Deep Learning","*ASA, CSSA* and *SSSA* International Annual Meetings, Baltimore MD",,2022,"*Daniel R Kick*, Jacob D. Washburn (2022)",Poster,,,
+national_presentations,TRUE,"Improving Maize Yield Prediction through Genetic, Environmental, and Management Factor Interactions with Deep Learning","*ASA, CSSA* and *SSSA* International Annual Meetings, Baltimore MD",,2022,"*Daniel R Kick*, Jacob D. Washburn (2022)",Presentation,,,
 national_presentations,TRUE,"Yield Prediction Accuracy is Improved Through Incorporating Genetic, Environmental, and Management Interactions with Deep Learning,","University of Missouri Interdisciplinary Plant Group Symposium, Columbia MO",,2022,"*Daniel R Kick*, Jacob D. Washburn (2022)",Presentation,,,
 national_presentations,TRUE,Effects of blockade of K+ currents on membrane conductance and channel expression at 1 hour and 24 hours in motor neurons of the cardiac ganglion.,"Dynamic Neural Networks: The Stomatogastric Nervous System, Virtual",,2020,"*Daniel R Kick*, Brian J. Lane, David J Schulz.",Presentation,,,
 national_presentations,TRUE,Loss of synchronous activity across gap junctions results in a phase-dependent change in coupling conductance magnitude.,"Neuroscience, Chicago IL",,2019,"*Daniel R Kick*, David J Schulz.",Poster,,,
@@ -80,6 +80,14 @@ outreach_presentations,FALSE,Voltage Dependent modification of Electrical Synaps
 outreach_presentations,FALSE,Gap Junction Conductance Modulation Via Voltage,"Truman State University Alumni Research Presentation, Kirksville MO",,2018,*Daniel R Kick*,Presentation,,,
 outreach_presentations,FALSE,Please mind the gap: Network homeostatic plasticity in the Cancer borealis cardiac ganglion,"Truman State University Alumni Research Presentation, Kirksville MO",,2017,*Daniel R Kick*,Presentation,,,
 outreach_presentations,FALSE,The Tell-Tale Heart: Applying crustacean neurogenic hearts to basic neurosciences questions,"Truman State University Alumni Research Presentation, Kirksville MO",,2016,*Daniel R Kick*,Presentation,,,
+,,,,,,,,,,
+mentoring,FALSE,Madi Michell,,,2022,University of Missouri Student Researcher,,,,
+mentoring,FALSE,Grace Sidberry,,,2021,University of Missouri Student Researcher,,,,
+mentoring,FALSE,Abby Beckerdite,,2016,2019,University of Missouri Student Researcher,,,,
+mentoring,FALSE,Ayla Ross,,,2019,NSF Research Experience for Undergraduates Student,,,,
+mentoring,FALSE,Katlyn Sullivan,,,2018,NSF Research Experience for Undergraduates Student,,,,
+mentoring,FALSE,Kelly Hiersche,,,2017,NSF Research Experience for Undergraduates Student,,,,
+mentoring,FALSE,Rody Kingston,,,2016,Postbaccalaureate Research Student,,,,
 ,,,,,,,,,,
 data_science_writings,FALSE,,,,,,,,,
 ,,,,,,,,,,
