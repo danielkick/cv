@@ -175,9 +175,9 @@ Daniel R. Kick, PhD {#title}
 --------------------------------------------------------------------------------
 
 - Experience with **statistics, programming, machine learning, and deep learning**.
-- **Presented** to scientific and general audiences **25** times since 2016. 
-- **Led** 4 teaching assistants and **mentored** 7 research students.
-- **Developed statistical tool** used by >700 students as of 2021.
+- **Presented** to scientific and general audiences **25 times** since 2016. 
+- **Led 4 teaching assistants** and **mentored 7 research students**.
+- **Developed statistical tool** used by **>700 students** as of 2021.
 
 ```{r}
 # paste(c("a", "b"), collapse = " | ")
@@ -217,7 +217,7 @@ David Schulz Lab, University of Missouri
 
 N/A
 
-2021 - 2016
+2021 - 2015
 
 - **Author on 6 publications**<font size="1">: 4 original research and 2 eLife Insight publications.</font>
 - <span style="color: #003399;">**Assessed the efficacy of machine learning models** to identify cell identity from mRNA and contig abundances.</span> **Applied cluster estimation, hyperparameter tuning, unsupervised machine learning,** and **supervised machine learning**. Identified and learned needed skills primarily through self study. Collaborated with molecular biology project lead. (see *Northcutt^1^, Kick^1^, et al. 2019*).
