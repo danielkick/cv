@@ -110,18 +110,20 @@ Aside
 ================================================================================
 ### Contact Info.
 
-- `r icons::fontawesome$solid$envelope` [hello@danielkick.com](hello@danielkick.com) 
+- `r icons::fontawesome$solid$envelope` [hello@danielkick.com](mailto:hello@danielkick.com) 
 - `r icons::fontawesome$brands$linkedin` [daniel-kick-5a449b9a](https://www.linkedin.com/in/daniel-kick-5a449b9a/)
 - `r icons::academicons$"google-scholar"` [Google Scholar](https://scholar.google.com/citations?user=5Sz0E-0AAAAJ&hl=en&oi=ao)
+<!-- - `r icons::fontawesome$brands$orcid` [0000-0002-9002-1862](https://orcid.org/0000-0002-9002-1862) -->
+- `r icons::fontawesome$brands$orcid` [ORCID](https://orcid.org/0000-0002-9002-1862)
 - `r icons::fontawesome$brands$github` [github.com/danielkick](https://github.com/danielkick)
 - `r icons::fontawesome$solid$link` [danielkick.com](https://www.danielkick.com)
 
-### Education
+## Education
 ### PhD: Biological Sciences
 
 University of Missouri, Columbia, MO (2021)
 
-<font size="-2">Machine Learning Methods for Biomedical Informatics, Quantitative Methods in the Life Sciences, and Grant Writing</font> 
+<font size="-2">**Machine Learning Methods for Biomedical Informatics**, Quantitative Methods in the Life Sciences, and Grant Writing</font> 
 
 <br>
 
@@ -131,7 +133,7 @@ Truman State University, Kirksville, MO (2015)
 
 <font size="-2">Next Generation Sequence Data and Analysis, Bioinformatics, ANOVA and Experimental Design, Non-Parametric Statistics
 
-*Leadership role* in the biological honors society *Tri-Beta*</font>
+**Leadership role** in the biological honors society Tri-Beta</font>
 
 
 <br>
@@ -141,13 +143,10 @@ Truman State University, Kirksville, MO (2015)
  `r icons::fontawesome$brands$"r-project"`: **R **Programming  (`r round(as.numeric(difftime(as.Date(format(Sys.time(), "%Y-%m-%d")), as.Date("2017-01-29"), units = "weeks"))/52, 0)` years) experience with <span style="color: DarkRed;">`tidyverse`, `lme4`, `caret`, `ggplot2`, `shiny`</span>, & package creation. 
  
  
- `r icons::fontawesome$brands$python`: **Python **Programming 
- 
- (`r round(as.numeric(difftime(as.Date(format(Sys.time(), "%Y-%m-%d")), as.Date("2021-06-09"), units = "weeks"))/52, 0)` years) experience with <span style="color:DarkRed;">`pandas`, `numpy`, `plotly`, `scikit-learn`, `keras`, `pytorch`</span>.
+ `r icons::fontawesome$brands$python`: **Python **Programming  (`r round(as.numeric(difftime(as.Date(format(Sys.time(), "%Y-%m-%d")), as.Date("2021-06-09"), units = "weeks"))/52, 0)` years) experience with <span style="color:DarkRed;">`pandas`, `numpy`, `plotly`, `scikit-learn`, `keras`, `pytorch`</span>.
  
 
  `r icons::octicons$terminal`: **Miscellaneous **
- 
  Experience with high performance computing (<span style="color:DarkRed;">`bash`, `slurm`</span>), virtual environments (<span style="color:DarkRed;">`conda`, `singularity`, `docker`</span>), version control (<span style="color:DarkRed;">`git`, `GitHub`</span>), literate programming (<span style="color:DarkRed;">`Rmarkdown`, `Jupyter`</span>).
 
 
@@ -176,8 +175,8 @@ Daniel R. Kick, PhD {#title}
 --------------------------------------------------------------------------------
 
 - Experience with **statistics, programming, machine learning, and deep learning**.
-- **Presented** to scientific and general audiences **>25** times since 2016 
-- **Mentored 7** research students and **lead 4 Teaching Assistants**.
+- **Presented** to scientific and general audiences **25** times since 2016. 
+- **Led** 4 teaching assistants and **mentored** 7 research students.
 - **Developed statistical tool** used by >700 students as of 2021.
 
 ```{r}
@@ -202,12 +201,14 @@ N/A
 Present - 2021
 
 - Employed **deep neural networks, machine learning models,** and **best linear unbiased predictors** to **improve corn yield prediction accuracy** in diverse environments (see *Kick et al., 2023*).
-- **Communicated with stakeholders through 8 presentations** <font size="1">(4 national, 2 regional, and 2 outreach presentations)</font>. 
-- **Mentored 2** students conducting a high throughput root phenotyping experiment and wrote scripts for data organization and analysis. 
-- **Created and taught a Python data visualization workshop** titled **"Tools and Techniques for a `Jupyter` Based Scientific Workflow"**
-- Completed **Software Carpentries instructor certification**, taught **`R` for Reproducible Scientific Analysis**, and assisted in teaching **Data Management with `SQL`**.
+- **Designed project plan** and **submitted grant** application titled **"Environmentally Aware Deep Learning Based Genomic Selection And Management Optimization For Maize Yield"** to the NIFA Agriculture and Food Research Initiative's Education and Workforce Development Program (*Decision Pending*).
+- **Communicated** with stakeholders through **8 presentations** <font size="1">(4 national, 2 regional, and 2 outreach presentations)</font>. 
+- **Mentored** 2 students conducting a high throughput root phenotyping experiment and wrote scripts for data organization and analysis. 
+- **Created** and taught a **Python data visualization workshop** titled "Tools and Techniques for a Jupyter Based Scientific Workflow".
+- **Collaborated with plant biologists**, contributing statistical expertise (manuscript in preparation).
+- Completed **Software Carpentries instructor certification**, taught **R for Reproducible Scientific Analysis**, and assisted in teaching **Data Management with SQL**.
 - Designed and completed a professional development curriculum with the guidance of an industry scientist via the **Bayer-University Mentoring Program**.
-- Served as a **panel member on "Next-Generation Omics"** at the 2022 University of Missouri Division of Biological Sciences Retreat
+- Served as a **panel member on "Next-Generation Omics"** at the 2022 University of Missouri Division of Biological Sciences Retreat.
 
 
 ### Graduate Researcher
@@ -219,14 +220,14 @@ N/A
 2021 - 2016
 
 - **Author on 6 publications**<font size="1">: 4 original research and 2 eLife Insight publications.</font>
-- <span style="color: #003399;">**Assessed the efficacy of machine learning models** to identify cell identity from mRNA and contig abundances.</span> **Applied cluster estimation, hyperparameter tuning, unsuprevised machine learning,** and **supervised machine learning**. Identified and learned needed skills primarily through self study. Collaborated with molecular biology project lead. (see *Northcutt^1^, Kick^1^, et al. 2019*).
-- <span style="color: #003399;">Demonstrated activity desynchronization induces changes in neuronal connections.</span> Defined research question and experiments. **Developed novel approach to quantify changes in cell activity**. Applied **resampling techniques, mixed effects models, Akaike information criteria,** and **asympotic regression** (see *Kick and Schulz 2022*). 
+- <span style="color: #003399;">**Assessed the efficacy of machine learning models** to identify cell identity from mRNA and contig abundances.</span> **Applied cluster estimation, hyperparameter tuning, unsupervised machine learning,** and **supervised machine learning**. Identified and learned needed skills primarily through self study. Collaborated with molecular biology project lead. (see *Northcutt^1^, Kick^1^, et al. 2019*).
+- <span style="color: #003399;">Demonstrated activity desynchronization induces changes in neuronal connections.</span> Defined research question and experiments. **Developed novel approach to quantify changes in cell activity** (see *Kick and Schulz 2022*). 
 - <span style="color: #003399;">Investigated activity dependent changes in neuronal excitability, conductances, and ion channel mRNA abundances.</span> Designed experiments, collected data, performed analysis, and **developed novel method for quantifying changes in cell activity** using *in silico* simulations.
-- **Collaborated with electrophysiologists**, assisting with data organization, cleaning, and analysis (in preparation).
-- **Collaborated with computational neurosciencists**, contributing biological and statistical expertise (in preparation).
+- **Collaborated with electrophysiologists**, assisting with data organization, cleaning, and analysis.
+- **Collaborated with computational neuroscientists**, contributing biological and statistical expertise (in preparation).
 - **Mentored 5 students** and oversaw their projects. 
 - Communicated results through **17 presentations** <font size="1">(6 national, 6 regional, and 5 outreach and recruitment)</font>. 
-- Served as a peer mentor for 3 PhD students in use of `R` for reproducible data analysis, created internal documents on same.
+- Served as a **peer mentor of 3 PhD students** in use of R for reproducible data analysis, created internal documents on same.
 
 <!-- (https://www.pnas.org/doi/10.1073/pnas.1911413116) -->
 <!-- [2](https://www.jneurosci.org/content/42/35/6751) -->
@@ -240,8 +241,8 @@ N/A
 
 2021 - 2020
 
-- **Developed statistics web application used by more than 700 students** as of 2021 with **`shiny`** ([source](https://github.com/danielkick/MultiMethodPhysApp), [deployed](https://danielkick.shinyapps.io/BioSc3700_1)) for data visualization, testing assumptions, and fitting **frequentist**, **non-parametric**, and **Bayesian** models.
-- Lead 4 Teaching Assistants and coordinated adaptation of lab curriculum to be fully online due to Covid-19.
+- **Developed statistics web application used by more than 700 students** as of 2021 with **shiny** ([source](https://github.com/danielkick/MultiMethodPhysApp), [deployed](https://danielkick.shinyapps.io/BioSc3700_1)) for data visualization, testing assumptions, and fitting **frequentist**, **non-parametric**, and **Bayesian** models.
+- Led 4 Teaching Assistants and coordinated adaptation of lab curriculum to be fully online due to COVID-19 pandemic.
 - **Mentored** next Lead Teaching Assistant, created documentation on best practices.
 
 ### Teaching Assistant, Animal Physiology Lab
@@ -252,8 +253,9 @@ N/A
 
 2020 - 2018
 
-- Analyzed student grade distributions to adjust for grader effects at request of the instructor of record.
-- Continued duties below.
+- Updated and refined curriculum.
+- Delivered lectures and ensured experiments were conducted safely.
+- Modeled student grade distributions to identify and adjust for differences in grading.
 
 
 ### Curriculum Consultant, Animal Physiology Lab
@@ -275,7 +277,7 @@ N/A
 
 2016 - 2015
 
-- Provided weekly lectures, ensured experiments were conducted safely, provided timely feedback on assignments.
+- Delivered weekly lectures, ensured experiments were conducted safely, provided timely feedback on assignments.
 
 
 ### Undergradute Researcher
@@ -286,15 +288,25 @@ N/A
 
 2013 - 2015
 
-- Designed a hydroponic system for maize root phenotyping <font size="1">-- Diane Janick-Buckner and Brent Buckner, Truman State University (2014-2015)</font>, Quantified retinal minor splicisome expression using immunohistochemistry <font size="1">-- (NSF REU) Rahul Kanadia, University of Connecticut (2014)</font>, Measured effectiveness of oligonucleotide treatment for spinal muscular atrophy in mice <font size="1">-- (NSF REU) Christian Lorson, University of Missouri (2013)</font>
+- Designed a hydroponic system for maize root phenotyping <font size="1">-- Diane Janick-Buckner and Brent Buckner, Truman State University (2014-2015)</font>, Quantified retinal minor splicisome expression using immunohistochemistry <font size="1">-- (NSF REU) Rahul Kanadia, University of Connecticut (2014)</font>, Measured effectiveness of oligonucleotide treatment for spinal muscular atrophy in mice <font size="1">-- (NSF REU) Christian Lorson, University of Missouri (2013)</font>.
 
 
 
-Honors and Awards (2/5) {data-icon=award}
+Honors and Awards {data-icon=award}
 --------------------------------------------------------------------------------
+
+### Ranked First in University of Missouri Plant Research Symposium Poster Competition
+
+N/A
+
+N/A
+
+2022
+
+
 ### J. Perry Gustafson Award for Outstanding Graduate Research in the Life Sciences
 
-[This award](https://randall-travel-award.missouri.edu/gustafson-award/) is granted for the quality of a student's independent research and academic achievements. Recipients receive a \$2,000 award.
+[This award](https://randall-travel-award.missouri.edu/gustafson-award/) is granted for the quality of a student's **independent research and academic achievements**. Recipients receive a \$2,000 award.
 
 N/A
 
@@ -310,12 +322,17 @@ N/A
 2018 - 2016
 
 
+### Cum Laude & President's Recognition, Truman State University
+
+N/A
+
+N/A
+
+2015
 
 
 
-
-
-Selected Publications (3/7 Published, +1 in Review, +3 in Prep.) {data-icon=flask}
+Selected Publications (3/7, +1 in Review, +2 in Prep.) {data-icon=flask}
 --------------------------------------------------------------------------------
 ```{r}
 # position_data %>% print_section('academic_articles')
