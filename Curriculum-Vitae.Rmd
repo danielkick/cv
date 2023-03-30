@@ -218,10 +218,10 @@ Publications in Preparation {data-icon=flask}
 position_data %>% print_section('academic_articles_prep')
 ```
 
-Mentoring {data-icon=users}
+National Presentations {data-icon=users}
 --------------------------------------------------------------------------------
 ```{r}
-position_data %>% print_section('mentoring')
+position_data %>% print_section('national_presentations')
 ```
 
 Local Presentations {data-icon=users}

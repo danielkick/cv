@@ -108,15 +108,16 @@ position_data <- position_data %>%
 
 Aside
 ================================================================================
-### Contact Info.
+Contact Info {#contact}
+--------------------------------------------------------------------------------
 
-- `r icons::fontawesome$solid$envelope` [hello@danielkick.com](mailto:hello@danielkick.com) 
-- `r icons::fontawesome$brands$linkedin` [daniel-kick-5a449b9a](https://www.linkedin.com/in/daniel-kick-5a449b9a/)
+- `r icons::fontawesome$solid$envelope` [hello@danielkick.com](hello@danielkick.com)
+- `r icons::fontawesome$brands$linkedin` [daniel-kick-5a449b9a/](https://www.linkedin.com/in/daniel-kick-5a449b9a/)
 - `r icons::academicons$"google-scholar"` [Google Scholar](https://scholar.google.com/citations?user=5Sz0E-0AAAAJ&hl=en&oi=ao)
-<!-- - `r icons::fontawesome$brands$orcid` [0000-0002-9002-1862](https://orcid.org/0000-0002-9002-1862) -->
-- `r icons::fontawesome$brands$orcid` [ORCID](https://orcid.org/0000-0002-9002-1862)
+- `r icons::fontawesome$brands$orcid` [0000-0002-9002-1862](https://orcid.org/0000-0002-9002-1862)
 - `r icons::fontawesome$brands$github` [github.com/danielkick](https://github.com/danielkick)
 - `r icons::fontawesome$solid$link` [danielkick.com](https://www.danielkick.com)
+
 
 ## Education
 ### PhD: Biological Sciences
@@ -175,7 +176,7 @@ Daniel R. Kick, PhD {#title}
 --------------------------------------------------------------------------------
 
 - Experience with **statistics, programming, machine learning, and deep learning**.
-- **Presented** to scientific and general audiences **25 times** since 2016. 
+- **Presented** to scientific and general audiences over **25 times** since 2016. 
 - **Led 4 teaching assistants** and **mentored 7 research students**.
 - **Developed statistical tool** used by **>700 students** as of 2021.
 
@@ -292,17 +293,8 @@ N/A
 
 
 
-Honors and Awards {data-icon=award}
+Honors and Awards (3/4) {data-icon=award}
 --------------------------------------------------------------------------------
-
-### Ranked First in University of Missouri Plant Research Symposium Poster Competition
-
-N/A
-
-N/A
-
-2022
-
 
 ### J. Perry Gustafson Award for Outstanding Graduate Research in the Life Sciences
 
@@ -332,11 +324,20 @@ N/A
 
 
 
-Selected Publications (3/7, +1 in Review, +2 in Prep.) {data-icon=flask}
+Selected Publications (3/7 Published, 2 in Review, 2 in Prep.) {data-icon=flask}
 --------------------------------------------------------------------------------
 ```{r}
 # position_data %>% print_section('academic_articles')
 ```
+
+
+### Ensemble of BLUP, Machine Learning, and Deep Learning Models Predict Maize Yield Better than Each Model Alone
+<font size="1">***Daniel R. Kick***, Jacob D. Washburn In Review</font>
+
+N/A
+
+2023
+
 ### Yield Prediction Through Integration of Genetic, Environment, and Management Data Through Deep Learning
 
 <font size="1">***Daniel R. Kick***, Jason G. Wallace, James C. Schnable, Judith M. Kolkman, Baris Alaca, Timothy M. Beissinger, David Ertl, Sherry Flint-Garcia, Joseph L. Gage, Candice N. Hirsch, Joseph E. Knoll, Natalia de Leon, Dayane C. Lima, Danilo Moreta, Maninder P. Singh, Teclemariam Weldekidan, Jacob D. Washburn [G3: Genes, Genomes, Genetics](https://academic.oup.com/g3journal/advance-article/doi/10.1093/g3journal/jkad006/6982634)</font>
