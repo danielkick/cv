@@ -14,6 +14,8 @@ output:
 knit: pagedown::chrome_print
 ---
 
+
+
 ```{r, echo=FALSE}
 # I have a fork of datadrivencv that makes some minor fixes to the original. See also annekelincoln's post below for issues with the icon library if encountered.
 # install.packages("devtools")
@@ -136,8 +138,7 @@ Contact Info {#contact}
 
  `r icons::octicons$terminal`: **Miscellaneous **
  
- Experience with high performance computing (<span style="color:DarkRed;">`bash`, `slurm`</span>), virtual environments (<span style="color:DarkRed;">`conda`, `singularity`, `docker`</span>), version control (<span style="color:DarkRed;">`git`, `GitHub`</span>), literate programming (<span style="color:DarkRed;">`Rmarkdown`, `Jupyter`</span>).
-
+ Experience with high performance computing (<span style="color:DarkRed;">`bash`, `slurm`</span>), virtual environments (<span style="color:DarkRed;">`conda`, `singularity`</span>), version control (<span style="color:DarkRed;">`git`, `GitHub`</span>), literate programming (<span style="color:DarkRed;">`Rmarkdown`, `Jupyter`</span>), crop growth modeling (<span style="color:DarkRed;">`APSIM`</span>).
 
 
 Disclaimer {#disclaimer}
