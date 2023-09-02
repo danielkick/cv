@@ -236,14 +236,14 @@ Truman State University, Kirksville, MO (2015)
 
 ### Technical Skills
 
- `r icons::fontawesome$brands$"r-project"`: **R **Programming  (`r round(as.numeric(difftime(as.Date(format(Sys.time(), "%Y-%m-%d")), as.Date("2017-01-29"), units = "weeks"))/52, 0)` years) experience with <span style="color: DarkRed;">`tidyverse`, `lme4`, `caret`, `ggplot2`, `shiny`</span>, & package creation. 
+ `r icons::fontawesome$brands$"r-project"`: **R **Programming  (`r round(as.numeric(difftime(as.Date(format(Sys.time(), "%Y-%m-%d")), as.Date("2017-01-29"), units = "weeks"))/52, 0)` years) and experience with <span style="color: DarkRed;">`tidyverse`, `lme4`, `caret`, `ggplot2`, `shiny`</span>, & package creation. 
  
  
- `r icons::fontawesome$brands$python`: **Python **Programming  (`r round(as.numeric(difftime(as.Date(format(Sys.time(), "%Y-%m-%d")), as.Date("2021-06-09"), units = "weeks"))/52, 0)` years) experience with <span style="color:DarkRed;">`pandas`, `numpy`, `plotly`, `scikit-learn`, `keras`, `pytorch`</span>.
+ `r icons::fontawesome$brands$python`: **Python **Programming  (`r round(as.numeric(difftime(as.Date(format(Sys.time(), "%Y-%m-%d")), as.Date("2021-06-09"), units = "weeks"))/52, 0)` years) and experience with <span style="color:DarkRed;">`pandas`, `numpy`, `plotly`, `scikit-learn`, `keras`, `pytorch`</span>.
  
 
  `r icons::octicons$terminal`: **Miscellaneous **
- Experience with high performance computing (<span style="color:DarkRed;">`bash`, `slurm`</span>), virtual environments (<span style="color:DarkRed;">`conda`, `singularity`</span>), version control (<span style="color:DarkRed;">`git`, `GitHub`</span>), literate programming (<span style="color:DarkRed;">`Rmarkdown`, `Jupyter`</span>), crop growth modeling (<span style="color:DarkRed;">`APSIM`</span>).
+ Experience with high performance computing (<span style="color:DarkRed;">`bash`, `slurm`</span>), virtual environments (<span style="color:DarkRed;">`conda`, `singularity`</span>), version control (<span style="color:DarkRed;">`git`, `GitHub`</span>), literate programming (<span style="color:DarkRed;">`Rmarkdown`, `Jupyter`</span>), crop growth modeling (<span style="color:DarkRed;">`APSIM Next Generation`</span>).
 
 
 <!-- `r icons::octicons$person`: **Soft Skills** Adaptability | Problem Solving | Self-Directed Learning | Leadership | Mentorship  -->
@@ -257,7 +257,7 @@ links scan here.
 
 
 
-```{r, out.width="65%"}
+```{r, out.width="55%"}
 knitr::include_graphics("./qr_gh_Resume_Resume.gif")
 ```
 <!-- This resume was made with the R package [**pagedown**](https://github.com/rstudio/pagedown). -->
@@ -271,6 +271,7 @@ Daniel R. Kick, PhD {#title}
 --------------------------------------------------------------------------------
 
 - Experience with **statistics, programming, machine learning, and deep learning**.
+- **Designed NIFA funded research plan** ([Grant 2023-67012-39485](https://portal.nifa.usda.gov/web/crisprojectpages/1030152-environmentally-aware-deep-learning-based-genomic-selection-and-management-optimization-for-maize-yield.html)).
 - **Presented** to scientific and general audiences over **25 times** since 2016. 
 - **Led 4 teaching assistants** and **mentored 7 research students**.
 - **Developed statistical tool** used by **>700 students** as of 2021.
@@ -297,7 +298,7 @@ N/A
 Present - 2021
 
 
-- **Secured $225,000** to develop **"Environmentally Aware Deep Learning Based Genomic Selection And Management Optimization For Maize Yield"** from the National Institute of Food and Agriculture.
+- **Secured $225,000** to develop **"Environmentally Aware Deep Learning Based Genomic Selection And Management Optimization For Maize Yield"** from the National Institute of Food and Agriculture (NIFA) ([Grant 2023-67012-39485](https://portal.nifa.usda.gov/web/crisprojectpages/1030152-environmentally-aware-deep-learning-based-genomic-selection-and-management-optimization-for-maize-yield.html)).
 - Employed **deep neural networks, machine learning models,** and **best linear unbiased predictors** to **improve corn yield prediction accuracy** in diverse environments.
 - **Communicated** with stakeholders via **`r postdoc_pres_national+postdoc_pres_local+postdoc_pres_outreach` presentations** <font size="1">(`r postdoc_pres_national` national, `r postdoc_pres_local` regional, `r postdoc_pres_outreach` outreach)</font>. 
 - **Mentored** `r postdoc_mentoring` students conducting a high throughput root phenotyping experiment. 
@@ -434,6 +435,7 @@ Selected Publications (Showing `r resume_frac(get_section = 'academic_articles')
 
 
 ### Ensemble of BLUP, Machine Learning, and Deep Learning Models Predict Maize Yield Better than Each Model Alone
+
 <font size="1">***Daniel R. Kick***, Jacob D. Washburn ([$bioR \chi iv$](https://www.biorxiv.org/content/10.1101/2023.03.30.532932v1)) In Review at *In silico Plants*</font>
 
 N/A
