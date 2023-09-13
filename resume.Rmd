@@ -322,7 +322,7 @@ N/A
 - Defined research question and experiments. **Developed novel approaches to quantify changes in cell activity**.
 - **Collaborated with electrophysiologists**, assisting with data analysis.
 - **Collaborated with computational neuroscientists**, contributing domain expertise.
-- **Mentored 5 `r phd_mentoring` students** and oversaw their projects. 
+- **Mentored `r phd_mentoring` students** and oversaw their projects. 
 - Communicated results through **`r phd_pres_national+phd_pres_local+phd_pres_outreach` presentations** <font size="1">(`r phd_pres_national` national, `r phd_pres_local` regional, `r phd_pres_outreach` outreach)</font>. 
 - Served as a **peer mentor of 3 PhD students** in use of R for reproducible data analysis, created internal documents on same.
 
