@@ -197,9 +197,68 @@ postdoc_mentoring <- row_count(filter(position_data_all,
                                           section == 'mentoring', end >= 2021))
 phd_mentoring <- row_count(filter(position_data_all, 
                                           section == 'mentoring', end < 2021))
-
-
 ```
+
+
+```{r, include=FALSE}
+library(rvest)
+# Get download values from zenodo
+zenodo_metrics <- function(url = 'https://zenodo.org/records/7401113'){
+
+  page_res <- read_html(url)
+  page_sections <- page_res %>% html_elements("section")
+  # page_sections[10][1] |> html_text2() |> print()
+  page_sections <-  map(page_sections, html_text2)
+
+
+  page_sections <- map(page_sections, function(x){
+    x <- x |>
+      stringr::str_replace_all('\n', '')
+    out <- stringr::str_detect(x, '\\d*Views\\d*Downloads')
+    if(out){
+      out <- x
+    }
+  })
+  metrics <- unlist(page_sections)
+
+  metrics_views <- stringr::str_extract(metrics, '\\d*Views') |> stringr::str_extract('\\d*')
+  metrics_downs <- stringr::str_extract(metrics, '\\d*Downloads') |> stringr::str_extract('\\d*')
+
+  return(c(metrics_views, metrics_downs))
+}
+
+urls = c(
+  # G3 Models
+  'https://zenodo.org/records/7401113',
+
+  # BLUP
+  'https://zenodo.org/records/8367235',
+
+  # Competition
+  'https://zenodo.org/records/7830071',
+
+  # G3 cleaned data
+  'https://zenodo.org/records/6916775'
+
+)
+
+metrics <- map(urls, zenodo_metrics)
+
+metrics <- data.frame(do.call(rbind, metrics))
+names(metrics) <- c('Views', 'Downloads')
+
+metrics_views <- sum(as.numeric(metrics$Views))
+metrics_downs <- sum(as.numeric(metrics$Downloads))
+
+
+format_txt_floor_nearest_5 <- function(val){
+  if(val %% 5 >0){gt <- 'over **'}else{gt <- '**'}
+  return(paste(c(gt, as.character(val - (val %% 5)), ' times**'), collapse = ''))
+}
+```
+
+
+
 
 Aside
 ================================================================================
@@ -272,9 +331,11 @@ Daniel R. Kick, PhD {#title}
 
 - Experience with **statistics, programming, machine learning, and deep learning**.
 - **Designed NIFA funded research plan** ([Grant 2023-67012-39485](https://portal.nifa.usda.gov/web/crisprojectpages/1030152-environmentally-aware-deep-learning-based-genomic-selection-and-management-optimization-for-maize-yield.html)).
-- **Presented** to scientific and general audiences over **25 times** since 2016. 
+- **Presented** to scientific and general audiences `r format_txt_floor_nearest_5(val = all_pres)`  since 2016. 
 - **Led 4 teaching assistants** and **mentored 7 research students**.
 - **Developed statistical tool** used by **>700 students** as of 2021.
+- **Data and models** downloaded `r format_txt_floor_nearest_5(val = metrics_downs)` and viewed `r format_txt_floor_nearest_5(val = metrics_views)`.
+
 
 ```{r}
 # paste(c("a", "b"), collapse = " | ")
@@ -425,18 +486,20 @@ position_data %>% print_section('honors')
 
 
 
+ <!-- `r resume_frac(get_section = 'academic_articles_review')` in Review, -->
 
 
-Selected Publications (Showing `r resume_frac(get_section = 'academic_articles')` Published, `r resume_frac(get_section = 'academic_articles_review')` in Review, 0/`r resume_frac(get_section = 'academic_articles_prep', half = T)` in Prep.) {data-icon=flask}
+
+Selected Publications (Showing `r resume_frac(get_section = 'academic_articles')` Published, 0/`r resume_frac(get_section = 'academic_articles_prep', half = T)` in Prep.) {data-icon=flask}
 --------------------------------------------------------------------------------
 ```{r}
 # position_data %>% print_section('academic_articles')
 ```
 
 
-### Ensemble of BLUP, Machine Learning, and Deep Learning Models Predict Maize Yield Better than Each Model Alone
+### Ensemble of Best Linear Unbiased Predictor, Machine Learning, and Deep Learning Models Predict Maize Yield Better Than Each Model Alone
 
-<font size="1">***Daniel R. Kick***, Jacob D. Washburn ([$bioR \chi iv$](https://www.biorxiv.org/content/10.1101/2023.03.30.532932v1)) In Review at *In silico Plants*</font>
+<font size="1">***Daniel R. Kick***, Jacob D. Washburn [_in Silico_ Plants](https://doi.org/10.1093/insilicoplants/diad015)</font>
 
 N/A
 

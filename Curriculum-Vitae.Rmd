@@ -141,6 +141,11 @@ Contact Info {#contact}
  Experience with high performance computing (<span style="color:DarkRed;">`bash`, `slurm`</span>), virtual environments (<span style="color:DarkRed;">`conda`, `singularity`</span>), version control (<span style="color:DarkRed;">`git`, `GitHub`</span>), literate programming (<span style="color:DarkRed;">`Rmarkdown`, `Jupyter`</span>), crop growth modeling (<span style="color:DarkRed;">`APSIM`</span>).
 
 
+ `r icons::fontawesome$solid$flask`: **Neuroscience Research **
+ 
+ Experience with **multimodal datasets** (<font size=-2>single cell mRNA expression, ionic conductances, and excitability</font>), experimental design, electrophysiology techniques (<font size=-2>dynamic, voltage, & current clamp</font>), **creating custom data processing workflows**.
+ 
+ 
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 <!-- For a pdf with -->
