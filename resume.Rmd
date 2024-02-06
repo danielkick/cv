@@ -331,11 +331,11 @@ Daniel R. Kick, PhD {#title}
 
 - Experience with **statistics, programming, machine learning, and deep learning**.
 - **Designed NIFA funded research plan** ([Grant 2023-67012-39485](https://portal.nifa.usda.gov/web/crisprojectpages/1030152-environmentally-aware-deep-learning-based-genomic-selection-and-management-optimization-for-maize-yield.html)).
-- **Presented** to scientific and general audiences `r format_txt_floor_nearest_5(val = all_pres)`  since 2016. 
-- **Led 4 teaching assistants** and **mentored 7 research students**.
+<!-- - **Presented** to scientific and general audiences `r format_txt_floor_nearest_5(val = all_pres)`  since 2016.  -->
+- **Presented** to scientific and general audiences `r paste(c("**", as.character(all_pres), " times**"), collapse = "")`  since 2016. 
 - **Developed statistical tool** used by **>700 students** as of 2021.
 - **Data and models** downloaded `r format_txt_floor_nearest_5(val = metrics_downs)` and viewed `r format_txt_floor_nearest_5(val = metrics_views)`.
-
+- **Led 4 teaching assistants** and **mentored 7 research students**.
 
 ```{r}
 # paste(c("a", "b"), collapse = " | ")
