@@ -138,7 +138,7 @@ Contact Info {#contact}
 
  `r icons::octicons$terminal`: **Miscellaneous **
  
- Experience with high performance computing (<span style="color:DarkRed;">`bash`, `slurm`</span>), virtual environments (<span style="color:DarkRed;">`conda`, `singularity`</span>), version control (<span style="color:DarkRed;">`git`, `GitHub`</span>), literate programming (<span style="color:DarkRed;">`Rmarkdown`, `Jupyter`</span>), crop growth modeling (<span style="color:DarkRed;">`APSIM`</span>).
+ Experience with high performance computing (<span style="color:DarkRed;">`bash`, `slurm`</span>), virtual environments (<span style="color:DarkRed;">`conda`, `singularity`</span>), version control (<span style="color:DarkRed;">`git`, `GitHub`</span>), literate programming (<span style="color:DarkRed;">`Quarto`, `Rmarkdown`, `Jupyter`, `nbdev`</span>), crop growth modeling (<span style="color:DarkRed;">`APSIM`</span>).
 
 
  `r icons::fontawesome$solid$flask`: **Neuroscience Research **

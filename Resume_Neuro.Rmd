@@ -197,68 +197,9 @@ postdoc_mentoring <- row_count(filter(position_data_all,
                                           section == 'mentoring', end >= 2021))
 phd_mentoring <- row_count(filter(position_data_all, 
                                           section == 'mentoring', end < 2021))
+
+
 ```
-
-
-```{r, include=FALSE}
-library(rvest)
-# Get download values from zenodo
-zenodo_metrics <- function(url = 'https://zenodo.org/records/7401113'){
-
-  page_res <- read_html(url)
-  page_sections <- page_res %>% html_elements("section")
-  # page_sections[10][1] |> html_text2() |> print()
-  page_sections <-  map(page_sections, html_text2)
-
-
-  page_sections <- map(page_sections, function(x){
-    x <- x |>
-      stringr::str_replace_all('\n', '')
-    out <- stringr::str_detect(x, '\\d*Views\\d*Downloads')
-    if(out){
-      out <- x
-    }
-  })
-  metrics <- unlist(page_sections)
-
-  metrics_views <- stringr::str_extract(metrics, '\\d*Views') |> stringr::str_extract('\\d*')
-  metrics_downs <- stringr::str_extract(metrics, '\\d*Downloads') |> stringr::str_extract('\\d*')
-
-  return(c(metrics_views, metrics_downs))
-}
-
-urls = c(
-  # G3 Models
-  'https://zenodo.org/records/7401113',
-
-  # BLUP
-  'https://zenodo.org/records/8367235',
-
-  # Competition
-  'https://zenodo.org/records/7830071',
-
-  # G3 cleaned data
-  'https://zenodo.org/records/6916775'
-
-)
-
-metrics <- map(urls, zenodo_metrics)
-
-metrics <- data.frame(do.call(rbind, metrics))
-names(metrics) <- c('Views', 'Downloads')
-
-metrics_views <- sum(as.numeric(metrics$Views))
-metrics_downs <- sum(as.numeric(metrics$Downloads))
-
-
-format_txt_floor_nearest_5 <- function(val){
-  if(val %% 5 >0){gt <- 'over **'}else{gt <- '**'}
-  return(paste(c(gt, as.character(val - (val %% 5)), ' times**'), collapse = ''))
-}
-```
-
-
-
 
 Aside
 ================================================================================
@@ -295,29 +236,33 @@ Truman State University, Kirksville, MO (2015)
 
 ### Technical Skills
 
+ `r icons::fontawesome$solid$flask`: **Neuroscience Research **
+ Experience with **multimodal datasets** (<font size=-2>single cell mRNA expression, ionic conductances, and excitability</font>), experimental design, electrophysiology techniques (<font size=-2>dynamic, voltage, & current clamp</font>), **creating custom data processing workflows**.
+ 
+ 
  `r icons::fontawesome$brands$"r-project"`: **R **Programming  (`r round(as.numeric(difftime(as.Date(format(Sys.time(), "%Y-%m-%d")), as.Date("2017-01-29"), units = "weeks"))/52, 0)` years) and experience with <span style="color: DarkRed;">`tidyverse`, `lme4`, `caret`, `ggplot2`, `shiny`</span>, & package creation. 
  
  
  `r icons::fontawesome$brands$python`: **Python **Programming  (`r round(as.numeric(difftime(as.Date(format(Sys.time(), "%Y-%m-%d")), as.Date("2021-06-09"), units = "weeks"))/52, 0)` years) and experience with <span style="color:DarkRed;">`pandas`, `numpy`, `plotly`, `scikit-learn`, `keras`, `pytorch`</span>.
  
 
- `r icons::octicons$terminal`: **Miscellaneous **
- Experience with high performance computing (<span style="color:DarkRed;">`bash`, `slurm`</span>), virtual environments (<span style="color:DarkRed;">`conda`, `singularity`</span>), version control (<span style="color:DarkRed;">`git`, `GitHub`</span>), literate programming (<span style="color:DarkRed;">`Quarto`, `Rmarkdown`, `Jupyter`, `nbdev`</span>), crop growth modeling (<span style="color:DarkRed;">`APSIM Next Generation`</span>).
+ `r icons::octicons$terminal`: **Other Technical **
+ Experience with high performance computing, virtual environments, version control (<span style="color:DarkRed;">`git`, `GitHub`</span>), literate programming.
+ 
 
 
-<!-- `r icons::octicons$person`: **Soft Skills** Adaptability | Problem Solving | Self-Directed Learning | Leadership | Mentorship  -->
 
 
-Disclaimer {#disclaimer}
---------------------------------------------------------------------------------
-For a pdf with
+<!-- Disclaimer {#disclaimer} -->
+<!-- -------------------------------------------------------------------------------- -->
+<!-- For a pdf with -->
 
-links scan here.
+<!-- links scan here. -->
 
 
 
 ```{r, out.width="55%"}
-knitr::include_graphics("./qr_gh_Resume_Resume.gif")
+# knitr::include_graphics("./qr_gh_Resume_Resume.gif")
 ```
 <!-- This resume was made with the R package [**pagedown**](https://github.com/rstudio/pagedown). -->
 <!-- Last updated on `r Sys.Date()`. -->
@@ -329,29 +274,17 @@ Main
 Daniel R. Kick, PhD {#title}
 --------------------------------------------------------------------------------
 
-- Experience with **statistics, programming, machine learning, and deep learning**.
-- **Designed NIFA funded research proposal** ([Grant 2023-67012-39485](https://portal.nifa.usda.gov/web/crisprojectpages/1030152-environmentally-aware-deep-learning-based-genomic-selection-and-management-optimization-for-maize-yield.html)).
-<!-- - **Presented** to scientific and general audiences `r format_txt_floor_nearest_5(val = all_pres)`  since 2016.  -->
-- **Presented** to scientific and general audiences `r paste(c("**", as.character(all_pres), " times**"), collapse = "")` since 2016.
-- Invited presentations at University of Michigan, Truman State University, Iowa State University, and University of Georgia's AI in Plant Breeding Symposium.
-- **Developed statistical tool** used by **>700 students** as of 2021.
-- **Data and models** downloaded `r format_txt_floor_nearest_5(val = metrics_downs)` and viewed `r format_txt_floor_nearest_5(val = metrics_views)`.
+- Interdisciplinary scientist with experience in **neuroscience, electrophysiology, statistics, programming, machine learning, and deep learning**.
+- **Developed NIFA funded research plan** ([Grant 2023-67012-39485](https://portal.nifa.usda.gov/web/crisprojectpages/1030152-environmentally-aware-deep-learning-based-genomic-selection-and-management-optimization-for-maize-yield.html)).
+- **Collaborated** with persons from diverse specializations including computational neuroscience, electrophysiology, and bioinformatics.
+- **Presented** to scientific and general audiences over **25 times** since 2016. 
 - **Led 4 teaching assistants** and **mentored 7 research students**.
-
-```{r}
-# paste(c("a", "b"), collapse = " | ")
-```
-
-<!-- Problem-solving |  Detail & Results-oriented | Statistical Analysis | Data Visualization | -->
-<!-- Literate Programming | Technical & Non-technical Writer | Research & Development | Public Speaking | -->
-<!-- Regulatory Affairs | Experimental Design | Method Development | Training, Mentorship, & Recruitment | -->
-<!-- Collaborative | Open-mindedness | Growth mindset | Resourceful | Dependability | Adaptability | Self-starter | -->
-<!-- Leadership | Effective Communicator | Fluorescent Microscopy | Microbiology | Pharmacology | Life Sciences -->
+- **Developed statistical tool** used by **>700 students** as of 2021.
 
 <!-- <span style="color: #003399;"> </span> -->
 Professional and Research Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
-### Research Geneticist
+### Research Geneticist (Deep Learning, Machine Learning)
 
 Jacob Washburn Lab, USDA-ARS
 
@@ -363,7 +296,7 @@ Present - 2021
 - **Secured $225,000** to develop **"Environmentally Aware Deep Learning Based Genomic Selection And Management Optimization For Maize Yield"** from the National Institute of Food and Agriculture (NIFA) ([Grant 2023-67012-39485](https://portal.nifa.usda.gov/web/crisprojectpages/1030152-environmentally-aware-deep-learning-based-genomic-selection-and-management-optimization-for-maize-yield.html)).
 - Employed **deep neural networks, machine learning models,** and **best linear unbiased predictors** to **improve corn yield prediction accuracy** in diverse environments.
 - **Communicated** with stakeholders via **`r postdoc_pres_national+postdoc_pres_local+postdoc_pres_outreach` presentations** <font size="1">(`r postdoc_pres_national` national, `r postdoc_pres_local` regional, `r postdoc_pres_outreach` outreach)</font>. 
-- **Mentored** `r postdoc_mentoring` students conducting a high throughput root phenotyping experiment. 
+- **Mentored** `r postdoc_mentoring` students conducting a high throughput phenotyping experiment. 
 - **Created** and taught a **Python data visualization workshop** titled "Tools and Techniques for a Jupyter Based Scientific Workflow".
 - Completed **Software Carpentries instructor certification**, taught **R for Reproducible Scientific Analysis**, and assisted in teaching **Data Management with SQL**.
 - Designed and completed a professional development curriculum with the guidance of an industry scientist via the **Bayer-University Mentoring Program**.
@@ -371,7 +304,7 @@ Present - 2021
 
 
 
-### Graduate Researcher
+### Graduate Researcher (Molecular Neurophysiology)
 
 David Schulz Lab, University of Missouri
 
@@ -381,7 +314,7 @@ N/A
 
 - **Author on 6 publications**<font size="1">: 4 original research and 2 eLife Insight publications.</font>
 - **Assessed the efficacy of machine learning models** to identify cell identity from mRNA and contig abundances. **Applied cluster estimation, hyperparameter tuning, unsupervised machine learning,** and **supervised machine learning**. Identified and learned needed skills primarily through self study. Collaborated with molecular biology project lead. (see *Northcutt^1^, Kick^1^, et al. 2019*).
-- Defined research question and experiments. **Developed novel approaches to quantify changes in cell activity**.
+- **Developed novel approaches to quantify changes in cell activity**.
 - **Collaborated with electrophysiologists**, assisting with data analysis.
 - **Collaborated with computational neuroscientists**, contributing domain expertise.
 - **Mentored `r phd_mentoring` students** and oversaw their projects. 
@@ -481,8 +414,6 @@ position_data %>% print_section('honors')
 <!-- N/A -->
 
 <!-- 2015 -->
-
-
 
 
 
