@@ -16,6 +16,7 @@ knit: pagedown::chrome_print
 
 
 
+
 ```{r eval=FALSE, include=FALSE}
 icons::icon_find('users', set = "fontawesome")
 icons::icon_find('leader')
@@ -265,14 +266,15 @@ Aside
 Contact Info {#contact}
 --------------------------------------------------------------------------------
 <!-- - `r icons::fontawesome$solid$envelope`<font size="1.5"> [daniel.r.kick@protonmail.com](daniel.r.kick@protonmail.com) </font> -->
-- `r icons::fontawesome$solid$envelope` [hello@danielkick.com](hello@danielkick.com)
-- `r icons::fontawesome$brands$linkedin` [daniel-kick-5a449b9a](https://www.linkedin.com/in/daniel-kick-5a449b9a/)
-- `r icons::academicons$"google-scholar"` [Google Scholar](https://scholar.google.com/citations?user=5Sz0E-0AAAAJ&hl=en&oi=ao)
+- `r icons::fontawesome$solid$envelope` [<font size="-2">hello@danielkick.com</font>](hello@danielkick.com)
+- `r icons::fontawesome$brands$linkedin` [<font size="-2">daniel-kick-5a449b9a</font>](https://www.linkedin.com/in/daniel-kick-5a449b9a/)
+- `r icons::academicons$"google-scholar"` [<font size="-2">Google Scholar</font>](https://scholar.google.com/citations?user=5Sz0E-0AAAAJ&hl=en&oi=ao)
 <!-- - `r icons::fontawesome$brands$orcid` [0000-0002-9002-1862](https://orcid.org/0000-0002-9002-1862) -->
-- `r icons::fontawesome$brands$github` [github.com/danielkick](https://github.com/danielkick)
-- `r icons::fontawesome$solid$link` [danielkick.com](https://www.danielkick.com)
+- `r icons::fontawesome$brands$github` [<font size="-2">github.com/DanielKick-USDA</font>](https://github.com/DanielKick-USDA)
+- `r icons::fontawesome$brands$github` [<font size="-2">github.com/danielkick</font>](https://github.com/danielkick)
+- `r icons::fontawesome$solid$link` [<font size="-2">danielkick.com</font>](https://www.danielkick.com) 
 
-## Education
+### Education
 ### PhD: Biological Sciences
 
 University of Missouri, Columbia, MO (2021)
@@ -285,25 +287,22 @@ University of Missouri, Columbia, MO (2021)
 
 Truman State University, Kirksville, MO (2015)
 
-<font size="-2">Next Generation Sequence Data and Analysis, Bioinformatics
+<font size="-2">Next Generation Sequence Data and Analysis, Bioinformatics, **Leadership role** in the biological honors society Tri-Beta</font>
 <!-- , ANOVA and Experimental Design, Non-Parametric Statistics -->
 
-**Leadership role** in the biological honors society Tri-Beta</font>
+
 
 
 <br>
 
 ### Technical Skills
 
- `r icons::fontawesome$brands$"r-project"`: **R **Programming  (`r round(as.numeric(difftime(as.Date(format(Sys.time(), "%Y-%m-%d")), as.Date("2017-01-29"), units = "weeks"))/52, 0)` years) and experience with <span style="color: DarkRed;">`tidyverse`, `lme4`, `caret`, `ggplot2`, `shiny`</span>, & package creation. 
+ `r icons::fontawesome$brands$python`: **Python **  (`r round(as.numeric(difftime(as.Date(format(Sys.time(), "%Y-%m-%d")), as.Date("2021-06-09"), units = "weeks"))/52, 0)` years) experience with <span style="color:DarkRed;">`pandas`, `numpy`, `plotly`, `scikit-learn`, `keras`, `pytorch`</span>.
  
+ `r icons::fontawesome$brands$"r-project"`: **R **  (`r round(as.numeric(difftime(as.Date(format(Sys.time(), "%Y-%m-%d")), as.Date("2017-01-29"), units = "weeks"))/52, 0)` years) experience with <span style="color: DarkRed;">`tidyverse`, `lme4`, `caret`, `ggplot2`, `shiny`</span>, & package creation. 
  
- `r icons::fontawesome$brands$python`: **Python **Programming  (`r round(as.numeric(difftime(as.Date(format(Sys.time(), "%Y-%m-%d")), as.Date("2021-06-09"), units = "weeks"))/52, 0)` years) and experience with <span style="color:DarkRed;">`pandas`, `numpy`, `plotly`, `scikit-learn`, `keras`, `pytorch`</span>.
- 
-
  `r icons::octicons$terminal`: **Miscellaneous **
- Experience with high performance computing (<span style="color:DarkRed;">`bash`, `slurm`</span>), virtual environments (<span style="color:DarkRed;">`conda`, `singularity`</span>), version control (<span style="color:DarkRed;">`git`, `GitHub`</span>), literate programming (<span style="color:DarkRed;">`Quarto`, `Rmarkdown`, `Jupyter`, `nbdev`</span>), crop growth modeling (<span style="color:DarkRed;">`APSIM Next Generation`</span>).
-
+ Experience with high performance computing (<span style="color:DarkRed;">`bash`, `slurm`</span>), virtual environments (<span style="color:DarkRed;">`conda`, `singularity`</span>), version control (<span style="color:DarkRed;">`git`, `GitHub`</span>), literate programming (<span style="color:DarkRed;">`Quarto`, `Rmarkdown`, `Jupyter`, `nbdev`</span>), Scientific modeling (crop growth modeling <span style="color:DarkRed;">`APSIM Next Generation`</span>), basic <span style="color:DarkRed;">`SQL`</span> (<span style="color:DarkRed;">`SQLite`)</span>.
 
 <!-- `r icons::octicons$person`: **Soft Skills** Adaptability | Problem Solving | Self-Directed Learning | Leadership | Mentorship  -->
 
@@ -329,14 +328,14 @@ Main
 Daniel R. Kick, PhD {#title}
 --------------------------------------------------------------------------------
 
-- Experience with **statistics, programming, machine learning, and deep learning**.
-- **Designed NIFA funded research proposal** ([Grant 2023-67012-39485](https://portal.nifa.usda.gov/web/crisprojectpages/1030152-environmentally-aware-deep-learning-based-genomic-selection-and-management-optimization-for-maize-yield.html)).
-<!-- - **Presented** to scientific and general audiences `r format_txt_floor_nearest_5(val = all_pres)`  since 2016.  -->
+- Experience predicting maize yield across environments using **deep learning, machine learning, statistical modeling** to facilitate crop improvement.
+- **Designed funded research project** (USDA NIFA) to create environmentally aware **deep learning models for trait prediction** and **transfer learning** between maize and wheat ($225,000, [Grant 2023-67012-39485](https://portal.nifa.usda.gov/web/crisprojectpages/1030152-environmentally-aware-deep-learning-based-genomic-selection-and-management-optimization-for-maize-yield.html)).
+- Initiated and led a multi-institutional research collaboration; collaborated with domain experts.
 - **Presented** to scientific and general audiences `r paste(c("**", as.character(all_pres), " times**"), collapse = "")` since 2016.
-- Invited presentations at University of Michigan, Truman State University, Iowa State University, and University of Georgia's AI in Plant Breeding Symposium.
-- **Developed statistical tool** used by **>700 students** as of 2021.
+- Invited presentations at University of Michigan, Truman State University, Iowa State University, and University of Georgia's **AI in Plant Breeding Symposium**.
+- **Developed data analysis app** used by **>700 students** as of 2021.
 - **Data and models** downloaded `r format_txt_floor_nearest_5(val = metrics_downs)` and viewed `r format_txt_floor_nearest_5(val = metrics_views)`.
-- **Led 4 teaching assistants** and **mentored 7 research students**.
+- **Led 4 teaching assistants** and **mentored `r postdoc_mentoring+phd_mentoring` research students**.
 
 ```{r}
 # paste(c("a", "b"), collapse = " | ")
@@ -361,14 +360,15 @@ Present - 2021
 
 
 - **Secured $225,000** to develop **"Environmentally Aware Deep Learning Based Genomic Selection And Management Optimization For Maize Yield"** from the National Institute of Food and Agriculture (NIFA) ([Grant 2023-67012-39485](https://portal.nifa.usda.gov/web/crisprojectpages/1030152-environmentally-aware-deep-learning-based-genomic-selection-and-management-optimization-for-maize-yield.html)).
-- Employed **deep neural networks, machine learning models,** and **best linear unbiased predictors** to **improve corn yield prediction accuracy** in diverse environments.
+- **Initiated and led a multi-institutional research collaboration** and wrote custom libraries for same.
+- Employed **deep neural networks, machine learning models, best linear unbiased predictors, and scientific models (i.e. process based)** to improve trait prediction accuracy in diverse environments.
 - **Communicated** with stakeholders via **`r postdoc_pres_national+postdoc_pres_local+postdoc_pres_outreach` presentations** <font size="1">(`r postdoc_pres_national` national, `r postdoc_pres_local` regional, `r postdoc_pres_outreach` outreach)</font>. 
-- **Mentored** `r postdoc_mentoring` students conducting a high throughput root phenotyping experiment. 
+- **Organized and lead** deep learning community of practice university and government attendees. 
+- **Mentored** `r postdoc_mentoring` students with projects ranging from high throughput phenotyping experiment, to deep learning model development. 
 - **Created** and taught a **Python data visualization workshop** titled "Tools and Techniques for a Jupyter Based Scientific Workflow".
 - Completed **Software Carpentries instructor certification**, taught **R for Reproducible Scientific Analysis**, and assisted in teaching **Data Management with SQL**.
-- Designed and completed a professional development curriculum with the guidance of an industry scientist via the **Bayer-University Mentoring Program**.
 - Served as a **panel member on "Next-Generation Omics"** at the 2022 University of Missouri Division of Biological Sciences Retreat.
-
+- Designed and completed a professional development curriculum with the guidance of an industry scientists via the **Bayer-University Mentoring Program** and the **Maize Genetics Mentoring Program**.
 
 
 ### Graduate Researcher
@@ -412,7 +412,7 @@ N/A
 
 2020 - 2018
 
-- Updated and refined curriculum, delivered lectures and ensured experiments were conducted safely, and modeled student grade distributions to identify and adjust for differences in grading.
+- Iteratively refined curriculum, modeled student grade distributions to identify and adjust for differences in grading.
 
 
 ### Curriculum Consultant, Animal Physiology Lab
@@ -423,7 +423,7 @@ N/A
 
 2018
 
-- Redesigned course material to incorporate primary literature and data analysis.
+- Redesigned and updated course material to incorporate data analysis and primary literature.
 
 
 ### Teaching Assistant, Animal Physiology Lab
@@ -443,16 +443,16 @@ University of Missouri, University of Connecticut, and Truman State University
 
 N/A
 
-2013 - 2015
+2015 - 2013
 
 - Designed a hydroponic system for maize root phenotyping <font size="1">--(2014-2015)</font>, Quantified retinal minor splicisome expression using immunohistochemistry <font size="1">-- (2014)</font>, Measured effectiveness of oligonucleotide treatment for spinal muscular atrophy in mice <font size="1">-- (2013)</font>.
 
-
-Honors and Awards (`r resume_frac(get_section = 'honors')`) {data-icon=award}
+Honors and Awards (Showing `r resume_frac(get_section = 'honors')`) {data-icon=award}
 --------------------------------------------------------------------------------
 ```{r}
 position_data %>% print_section('honors')
 ```
+
 
 
 
@@ -488,10 +488,10 @@ position_data %>% print_section('honors')
 
 
  <!-- `r resume_frac(get_section = 'academic_articles_review')` in Review, -->
+<!-- Selected Publications (Showing `r resume_frac(get_section = 'academic_articles')` Published, with `r resume_frac(get_section = 'academic_articles_prep', half = T)` in Prep.) {data-icon=flask} -->
 
 
-
-Selected Publications (Showing `r resume_frac(get_section = 'academic_articles')` Published, 0/`r resume_frac(get_section = 'academic_articles_prep', half = T)` in Prep.) {data-icon=flask}
+Selected Publications (Showing `r resume_frac(get_section = 'academic_articles')` Published) {data-icon=flask}
 --------------------------------------------------------------------------------
 ```{r}
 # position_data %>% print_section('academic_articles')
@@ -514,17 +514,6 @@ N/A
 
 2023
 
-
-### Timing dependent potentiation and depression of electrical synapses contributes to network stability in the crustacean cardiac ganglion
-
-<font size="1">***Daniel R. Kick*** and David J. Schulz [The Journal of Neuroscience](https://www.jneurosci.org/content/42/35/6751)</font>
-
-N/A
-
-2022
-<!-- [Code](https://github.com/danielkick/ElectricalSynapsePotentiation) -->
-
-
 ### Molecular profiling of single neurons of known identity in two ganglia from the crab Cancer borealis
 
 <font size="1">Adam J. Northcutt^1^, ***Daniel R. Kick^1^***, Adriane G. Otopalik, Benjamin M. Goetz, Rayna M. Harris, Joseph M. Santin, Hans A. Hofmann, Eve Marder, and David J. Schulz (***^1^ denotes co-first authorship***) [Proceedings of the National Academy of Sciences](https://www.pnas.org/doi/10.1073/pnas.1911413116)</font>
@@ -535,4 +524,3 @@ N/A
 
 
 <!-- [Code](https://github.com/danielkick/STGmRNACellClassification) -->
-
