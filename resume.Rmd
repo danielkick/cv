@@ -4,14 +4,14 @@ author: Daniel Kick
 Date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
-    css: 
+    css:
       - css/custom_resume.css
       - css/styles.css
       - resume
     # set it to true for a self-contained HTML page but it'll take longer to render
-    self_contained: true
+    # self_contained: true
 # uncomment this line to produce HTML and PDF in RStudio:
-knit: pagedown::chrome_print
+# knit: pagedown::chrome_print
 ---
 
 
@@ -380,7 +380,7 @@ N/A
 2021 - 2015
 
 - **Author on 6 publications**<font size="1">: 4 original research and 2 eLife Insight publications.</font>
-- **Assessed the efficacy of machine learning models** to identify cell identity from mRNA and contig abundances. **Applied cluster estimation, hyperparameter tuning, unsupervised machine learning,** and **supervised machine learning**. Identified and learned needed skills primarily through self study. Collaborated with molecular biology project lead. (see *Northcutt^1^, Kick^1^, et al. 2019*).
+- **Assessed the efficacy of machine learning models** to predict cell identity from mRNA and contig abundances. **Applied cluster estimation, hyperparameter tuning, unsupervised machine learning,** and **supervised machine learning**. Identified and learned needed skills primarily through self study. Collaborated with molecular biology project lead. (see *Northcutt^1^, Kick^1^, et al. 2019*).
 - Defined research question and experiments. **Developed novel approaches to quantify changes in cell activity**.
 - **Collaborated with electrophysiologists**, assisting with data analysis.
 - **Collaborated with computational neuroscientists**, contributing domain expertise.
